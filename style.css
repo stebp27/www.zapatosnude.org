@@ -117,8 +117,13 @@ body {
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
   .column {
-    flex: 100%;
-    max-width: 100%;
+    flex: 18%;
+    max-width: 18%;
+  }
+  .canciones{
+    column-count: initial;
+    -webkit-column-count: initial; /* Chrome, Safari, Opera */
+    -moz-column-count: initial; /* Firefox */
   }
 }
 
@@ -694,21 +699,17 @@ body {
   }
 }
 
-
 .versiculo {
-  font-size: 2em;
+  font-size: 5.5vw;
   font-style: italic;
-  margin: 1em auto 0;
-  max-width: 42%;
+  margin: 1rem auto 0;
   text-align: center;
   font-family: affect;
   font-weight: bold;
 }
 
 .poema {
-  font-size: 1em;
-  margin: 1em auto 0;
-  max-width: 50%;
+  margin: 1rem auto 0;
   text-align: center;
 }
 
@@ -724,8 +725,8 @@ body {
 
 .titulo-pagina-canciones
 {
-  font-size: 2em;
-  margin-top: 0.5em;
+  font-size: 2rem;
+  margin-top: 0.5rem;
   margin-bottom: 1.5rem;
   text-align: center;
   font-family: gaby;
@@ -733,7 +734,7 @@ body {
 }
 
 .titulo-canciones {
-  font-size: 1.2em;
+  font-size: 1.2rem;
   margin-bottom: 0.5rem;
   font-family: murbia;
   font-weight: bold;
@@ -749,7 +750,7 @@ body {
   background: url(Pictures/1.jpg) repeat-x scroll;
   background-position: center top;
   box-sizing: border-box;
-  width: 1920px;
+  width: 100vw;
   height: 100vh;
   opacity : 0.3;
   z-index: -1;
@@ -759,9 +760,12 @@ body {
 
 
 .canciones{
-  column-count: 2;
-  -webkit-column-count: 2; /* Chrome, Safari, Opera */
-  -moz-column-count: 2; /* Firefox */
+  column-count: auto;
+  -webkit-column-count: auto; /* Chrome, Safari, Opera */
+  -moz-column-count: auto; /* Firefox */
+  -webkit-column-width: 50vw;
+  -moz-column-width: 50vw;
+  column-width: 50vw;
 }
 
 @font-face{
@@ -783,13 +787,13 @@ body {
 
 .poema{
   font-family: circleLove;
-  font-size: 1.5em;
+  font-size: 5vw;
   font-weight: bold;
 }
 
 .song-video-title{
   font-family: murbia;
-  font-size: 3em;
+  font-size: 3rem;
   font-weight: bold;
   margin: 0.5em;
   color: red;
