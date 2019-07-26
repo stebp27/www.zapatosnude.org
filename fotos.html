@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
+    <script src="modal.js"></script>
 </head>
 <body>
     <header class="header">
@@ -22,6 +23,19 @@
             <img src="logo.png" alt="Learn Enough">
         </a>
     </header>
+
+    <!-- The Modal -->
+    <div id="modal" class="modal">
+        
+        <!-- The Close Button -->
+        <span class="close">&times;</span>
+  
+        <!-- Modal Content (The Image) -->
+        <img class="modal-content" id="modal-img">
+        <!-- Next/previous controls -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
 
     <div class="content-container">
         <div class="row">
@@ -83,6 +97,5 @@
             </div>
         </div>
     </div>
-
 </body>
 </html>
